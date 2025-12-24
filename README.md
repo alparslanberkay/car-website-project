@@ -20,7 +20,7 @@ Bu projede aşağıdaki teknolojiler ve CSS teknikleri bilinçli olarak tercih e
 
 ### 3. Kullanıcı Etkileşimi (UX) & Animasyonlar
 - **Micro-interactions:** Butonlar ve kartlar üzerinde `transform: scale()` ve `translateY()` kullanılarak kullanıcıya görsel geri bildirim sağlayan interaktif hover efektleri eklenmiştir.
-- **Keyframe Animations:** Sayfa yüklenirken kartların sırayla belirmesi (`fadeInUp`) ve başlık altındaki çizginin uzaması (`growLine`) gibi animasyonlar ile dinamik bir yapı kurulmuştur.
+
 
 ### 4. Responsive (Mobil Uyumluluk)
 - **Media Queries:** `@media` sorguları kullanılarak sayfanın tablet ve mobil cihazlarda sorunsuz çalışması sağlanmıştır. 
