@@ -3,7 +3,7 @@
 Bu proje, modern ve kullanıcı dostu bir otomobil tanıtım sayfası arayüzüdür. Geliştirme sürecinde temel web teknolojilerine odaklanılmış; temiz kod yazımı, görsel estetik ve mobil uyumluluk (responsive) ön planda tutulmuştur.
 
 ## 🚀 Canlı Önizleme
-Projeyi tarayıcınızda görüntülemek için: [Buraya GitHub Pages Linkini Yapıştır Kanka]
+Projeyi tarayıcınızda görüntülemek için: [https://alparslanberkay.github.io/car-website-project/](https://alparslanberkay.github.io/car-website-project/)
 
 ## 🛠️ Kullanılan Teknolojiler ve Teknik Özellikler
 
@@ -29,7 +29,7 @@ Bu projede aşağıdaki teknolojiler ve CSS teknikleri bilinçli olarak tercih e
 ## 📦 Kurulum ve Çalıştırma
 Projeyi yerel bilgisayarınızda çalıştırmak isterseniz:
 
-1. Bu depoyu klonlayın: `git clone https://github.com/kullanici-adin/repository-adin.git`
+1. Bu depoyu klonlayın: `git clone https://alparslanberkay.github.io/car-website-project/`
 2. Klasöre gidin: `cd repository-adin`
 3. `index.html` dosyasını herhangi bir tarayıcıda açın.
 
