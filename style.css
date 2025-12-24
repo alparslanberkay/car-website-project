@@ -12,6 +12,21 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
+/* Mobilde butonun dışarı taşmasını engelle */
+@media (max-width: 480px) {
+    .btn1, .navbar button { 
+        max-width: 100%;       /* Kendi alanından dışarı çıkmasın */
+        box-sizing: border-box; /* Padding dahil genişlik hesapla */
+        margin: 5px 0;         /* Yanlardaki payı sıfırla, sadece alt-üst boşluk ver */
+    }
+
+    /* Eğer buton bir link veya div içindeyse onun genişliğini de kısıtla */
+    .navbar {
+        padding-right: 15px !important; /* Sağdan bir nefes alma payı bırak */
+        overflow: hidden;               /* Dışarı taşan ne varsa gizle */
+    }
+}
 .container{
     width: 100%;
     margin: 0 auto;
