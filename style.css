@@ -13,20 +13,8 @@ html, body {
     padding: 0;
 }
 
-/* Mobilde butonun dışarı taşmasını engelle */
-@media (max-width: 480px) {
-    .btn1, .navbar button { 
-        max-width: 100%;       /* Kendi alanından dışarı çıkmasın */
-        box-sizing: border-box; /* Padding dahil genişlik hesapla */
-        margin: 5px 0;         /* Yanlardaki payı sıfırla, sadece alt-üst boşluk ver */
-    }
 
-    /* Eğer buton bir link veya div içindeyse onun genişliğini de kısıtla */
-    .navbar {
-        padding-right: 15px !important; /* Sağdan bir nefes alma payı bırak */
-        overflow: hidden;               /* Dışarı taşan ne varsa gizle */
-    }
-}
+
 .container{
     width: 100%;
     margin: 0 auto;
@@ -269,3 +257,30 @@ h1{
 .card-3 { animation-delay: 1.1s; }
 .card-4 { animation-delay: 1.6s; }
 
+
+
+@media (max-width: 480px) {
+    /* Navbar'ın kendisini kontrol et */
+    .navbar {
+        display: flex;
+        flex-direction: row; /* Yan yana kalsınlar */
+        flex-wrap: wrap;     /* Sığmazsa aşağı kaysın */
+        justify-content: space-between; 
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+        overflow: visible !important; /* Gizlenen butonu geri getirir */
+    }
+
+    /* Contact Us Butonuna Özel Ayar */
+    .navbar button, .btn-contact { 
+        display: block !important;    /* Görünürlüğü garanti et */
+        visibility: visible !important;
+        position: relative;           /* Eğer fixed veya absolute ise bunu bozabilir, dikkat! */
+        width: auto;                  /* Genişliği içeriği kadar olsun */
+        min-width: 80px;              /* Çok küçülmesin */
+        font-size: 12px;              /* Yazıyı mobilde biraz küçültelim ki sığsın */
+        padding: 8px 10px;
+        margin-right: 0;              /* Sağdaki boşluğu sıfırla ki ekranı itmesin */
+    }
+}
